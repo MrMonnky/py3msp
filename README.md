@@ -3,7 +3,8 @@ A fast python3 MovieStarPlanet1 client with ticket gestion with proxy and bytear
 
 usage:
 
-```
+```py
+
 import moviestarplanet, asyncio
 
 async def main():
