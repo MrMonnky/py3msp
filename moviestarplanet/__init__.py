@@ -24,7 +24,7 @@ class AsyncClient():
     async def send_command_async(self, server: str, method: str, args: dict, proxy: Optional[str]=None):
         '''
            >>> Send a command to MovieStarPlanet.
-               ~ Example : await send_command_async('fr', 'MovieStarPlanet.WebService.UserSession.AMFUserSessionService.GetActorIdFromName', 'Username')
+               ~ Example : await send_command_async('fr', 'MovieStarPlanet.WebService.UserSession.AMFUserSessionService.GetActorIdFromName', ['Username'])
         '''
         amf = await request.post_async(
             session=self._session,
